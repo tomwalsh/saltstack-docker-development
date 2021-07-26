@@ -1,0 +1,11 @@
+# Docker Ubuntu 18.04 Salt Minion
+An automated docker container build for Ubuntu 18.04 and the latest version of Saltstack's salt-minion. This image is automatically rebuilt each time there is a new version of the Ubuntu 18.04 container.
+
+# Link to the Container
+https://hub.docker.com/r/expresshosting/ubuntu18.04-salt-minion
+
+## What is This Used For?
+The intended use case for this container build is a self contained development environment for building and testing Saltstack Salt states on various OS based minions.
+
+## The Goal of this Container
+The goal for this container is to mirror, as closely as possible, the various production environments that could exist for a Saltstack deployment.
