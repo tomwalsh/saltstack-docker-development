@@ -1,0 +1,2 @@
+# Container Images
+These are the prebuilt container images that we use in the main project. No modifications should be needed to these images, and the container images are prebuilt and staged on https://hub.docker.com/u/expresshosting automatically.
