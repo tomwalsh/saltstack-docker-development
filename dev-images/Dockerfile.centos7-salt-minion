@@ -1,0 +1,4 @@
+FROM expresshosting/centos7-salt-minion
+LABEL maintainer="docker.maint@expresswebsystems.com"
+
+ENTRYPOINT ["salt-minion", "-l", "debug"]

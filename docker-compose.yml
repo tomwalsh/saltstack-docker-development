@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  salt-master:
+    build:
+      context: .
+      dockerfile: ./dev-images/Dockerfile.${OSENV}-salt-master
+    volumes:
+      - ./:/srv/salt
+      - ./salt/master.d:/etc/salt/master.d
+    hostname: salt-master
+  ubuntu18.04-salt-minion:
+    build:
+      context: .
+      dockerfile: ./dev-images/Dockerfile.ubuntu18.04-salt-minion
+    depends_on:
+      - salt-master
+    hostname: ubuntu18.04-minion
+  ubuntu20.04-salt-minion:
+    build:
+      context: .
+      dockerfile: ./dev-images/Dockerfile.ubuntu20.04-salt-minion
+    depends_on:
+      - salt-master
+    hostname: ubuntu20.04-minion
+  centos7-salt-minion:
+    build:
+      context: .
+      dockerfile: ./dev-images/Dockerfile.centos7-salt-minion
+    depends_on:
+      - salt-master
+    hostname: centos7-minion
+  centos8-salt-minion:
+    build:
+        context: .
+        dockerfile: ./dev-images/Dockerfile.centos8-salt-minion
+    depends_on:
+        - salt-master
+    hostname: centos8-minion

@@ -1,0 +1,4 @@
+FROM expresshosting/centos8-salt-master
+LABEL maintainer="docker.maint@expresswebsystems.com"
+
+ENTRYPOINT ["salt-master", "-l", "debug"]
