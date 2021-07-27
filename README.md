@@ -64,7 +64,7 @@ Here we can see the test.ping command sent to each minion from the master `salt 
 ## Resetting the Environment
 From time to time it is handy to blow away the environment to ensure that you have a clean slate for your development or testing. The `reset.sh` command will go through and collect all the containers that have the word "salt" in the name and destroy them. This ensures a fresh start on a subsequent ./build.sh.
 
-*Make sure you have stopped the docker compose process before to try to reset the environment.*
+*Make sure you have stopped the docker compose process before you try to reset the environment.*
 
 ![Resetting the Environment](https://raw.githubusercontent.com/tomwalsh/saltstack-docker-development/main/screenshots/resetting-containers.gif)
 
