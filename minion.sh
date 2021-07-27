@@ -2,7 +2,7 @@
 set -e
 export OSENV="ubuntu18.04"
 WINPTY=""
-if grep -qE "(Microsoft|WSL|MINGW)" /proc/version &> /dev/null; then
+if grep -qE "(MINGW)" /proc/version &> /dev/null; then
     WINPTY="winpty"
 fi
 if [ -n "$1" ]; then

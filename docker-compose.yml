@@ -6,7 +6,7 @@ services:
       context: .
       dockerfile: ./dev-images/Dockerfile.${OSENV}-salt-master
     volumes:
-      - ./:/srv/salt
+      - ./salt:/srv/salt
       - ./salt/master.d:/etc/salt/master.d
     hostname: salt-master
   ubuntu18.04-salt-minion:
