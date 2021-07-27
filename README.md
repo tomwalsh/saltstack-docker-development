@@ -92,5 +92,8 @@ All containers used for the salt-master and salt-minions are stored in this repo
 
 ![Magic!](https://raw.githubusercontent.com/tomwalsh/saltstack-docker-development/main/screenshots/magic.gif)
 
+#### Further Improvements
+If there are any other minions or masters that you would like see added, please add a PR (Pull Request) and I will get them added.
+
 #### Credits
 My original inspiration for this project was taken from https://github.com/cyface/docker-saltstack
