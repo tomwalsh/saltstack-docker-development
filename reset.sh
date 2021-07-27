@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 WINPTY=""
-if grep -qE "(Microsoft|WSL|MINGW)" /proc/version &> /dev/null; then
+if grep -qE "(MINGW)" /proc/version &> /dev/null; then
     WINPTY="winpty"
 fi
 
